@@ -1,3 +1,19 @@
+/* Universal selector */
+* {
+  /* box-sizing: border-box;
+  border-top: 10px solid #1098ad; */
+}
+body {
+  /*margin creates space outside the border of an element,margin and padding are only transparent spaces,margin outside of the element*/
+  margin: 10px;
+  border-top: 10px solid #1098ad;
+  /*padding creates space inside the border of an element .Inside of border*/
+  padding: 5px;
+  font-family: sans-serif;
+  color: #444;
+}
+/* This is due to inheritance that body color is inherited by all other elements unless specified otherwise */
+/*
 h1,
 h2,
 h3,
@@ -8,7 +24,7 @@ li {
   padding: 5px;
   font-family: sans-serif;
   color: #444;
-}
+} */
 
 h1,
 h2,
@@ -141,7 +157,7 @@ article p:first-child {
 /* text-decoration: none;
 } */
 a:visited {
-  color: purple; /* visited links */
+  color: #ffffff; /* visited links */
 }
 
 a:hover {
@@ -156,3 +172,27 @@ a:active {
   font-style: italic;
   color: orange; /* when clicking */
 }
+/* LVHA */
+a {
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.related a {
+  color: #444;
+}
+/* Resolving conflicts */
+/* #copyright {
+  color: red;
+}
+.copyright {
+  color: blue;
+}
+.text {
+  color: yellow;
+}
+footer p {
+  color: green !important;
+} */
+
+/* Inheritance */
