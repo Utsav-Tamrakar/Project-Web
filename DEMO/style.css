@@ -1,7 +1,7 @@
 /* Universal selector */
 * {
-  /* box-sizing: border-box;
-  border-top: 10px solid #1098ad; */
+  box-sizing: border-box;
+  /* border-top: 10px solid #1098ad; */
 }
 body {
   /*margin creates space outside the border of an element,margin and padding are only transparent spaces,margin outside of the element*/
@@ -78,7 +78,9 @@ li {
   line-height: 1.5;
   margin: 10px;
 }
-
+li:last-child {
+  margin: 0px;
+}
 /* footer p {
   font-size: 16px;
 } */
