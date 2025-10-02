@@ -1,6 +1,8 @@
 /* Universal selector */
 * {
-  box-sizing: border-box;
+  margin: 0px;
+  padding: 10px;
+  /* box-sizing: border-box; */
   /* border-top: 10px solid #1098ad; */
 }
 body {
@@ -19,14 +21,29 @@ body {
   padding-left: 40px;
   padding-right: 40px; */
   padding: 20px 40px;
+  margin-bottom: 20px;
 }
-
+/* .container {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 0px auto;insted of writing both 
+} */
+.post-header {
+  margin-bottom: 20px;
+}
 aside {
+  font-size: 20px;
+  text-align: left;
   background-color: #f5f5f5;
   /* For a box around aside */
   /* border: 5px solid #1098ad; */
   border-top: 5px solid #1098ad;
   border-bottom: 5px solid #1098ad;
+  /* padding-top: 50px;
+  padding-bottom: 50px; */
+  padding: 50px 0;
+  width: 500px;
 }
 /* This is due to inheritance that body color is inherited by all other elements unless specified otherwise */
 /*
@@ -36,7 +53,7 @@ h3,
 h4,
 p,
 li {
-  margin: 10px;
+  margin: 10px; 
   padding: 5px;
   font-family: sans-serif;
   color: #444;
@@ -49,17 +66,19 @@ h3 {
 }
 
 h1 {
-  font-size: 25px;
+  font-size: 35px;
   text-transform: uppercase;
   font-style: italic;
 }
 
 h2 {
   font-size: 40px;
+  margin-bottom: 30px;
 }
 
 h3 {
   font-size: 30px;
+  margin-bottom: 15px;
 }
 
 h4 {
@@ -68,8 +87,14 @@ h4 {
   text-align: center;
 }
 p {
-  font-size: 21px;
+  font-size: 25px;
   line-height: 1.5;
+  margin-bottom: 10px;
+}
+ul,
+ol {
+  margin-left: 50px;
+  /* margin-bottom: 20px; */
 }
 
 li {
@@ -124,8 +149,13 @@ li:first-child {
   font-weight: bold;
 }
 
+.post-img {
+  width: 100%;
+  height: auto;
+}
 /* To make the links of nav bar look like buttons */
 nav a {
+  font-size: 18px;
   color: white;
   text-decoration: none;
   background-color: #1098ad;
@@ -133,7 +163,9 @@ nav a {
   border-radius: 3px;
   margin: 10px;
 }
-
+article {
+  margin-bottom: 60px;
+}
 li:last-child {
   font-style: italic;
 }
@@ -163,7 +195,9 @@ article p:first-child {
 /* text-decoration: none;
 } */
 a:visited {
-  color: #ffffff; /* visited links */
+  color: #000000;
+  font-weight: bold;
+  /* visited links */
 }
 
 a:hover {
